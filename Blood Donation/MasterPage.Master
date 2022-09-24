@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Blood_Donation.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+
+    <title> Blood Donation Website </title>
+
+    <link href="CSS/MasterStyle.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <div class="Container">
+
+            <header>
+
+                <div class="logo">
+
+                    <img src="Images\Logo-1.svg" alt="Blood Donation Logo"/>
+
+                </div>
+
+                <div class="Title">
+
+                    <h1> Blood Donation </h1>
+
+                </div>
+
+                <div class="Navigation">
+
+                    <nav>
+
+                        <ul>
+
+                            <li> <a href="Home.aspx"> Home </a> </li>
+
+                            <li> <a href="Home.aspx"> Donate </a> </li>
+
+                            <li> <a href="Home.aspx"> Benefits </a> </li>
+
+                            <li> <a href="Home.aspx"> About </a> </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <div id="Profile">
+
+                        <asp:ImageButton ID="Profilebtn" runat="server" ImageAlign="Middle" CssClass="Profilebtn" ImageUrl="~/Images/Male.png" />
+
+                        <asp:Label ID="UserN" runat="server" Text="Weclome, " CssClass="UserNamelab"></asp:Label>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
